@@ -16,7 +16,7 @@
 	<parent>
 		<groupId>com.iluwatar</groupId>
 		<artifactId>naked-objects</artifactId>
-		<version>1.5.0</version>
+		<version>1.21.0-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>naked-objects-dom</artifactId>
@@ -50,6 +50,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		<!-- Bytecode libraries (for mocking) -->
 		<dependency>
 			<groupId>org.objenesis</groupId>
@@ -72,7 +78,7 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-				<datanucleus-maven-plugin.version>4.0.0-release</datanucleus-maven-plugin.version>
+                <datanucleus-maven-plugin.version>4.0.1</datanucleus-maven-plugin.version>
 			</properties>
 			<build>
 				<pluginManagement>
